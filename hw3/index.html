@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛙达西余浩</title>
+    <style>
+        body{
+        background-color: white;
+        margin:0;
+        padding:0;
+      }
+
+      div.body{
+        width: 100%;
+      }
+
+        a:link {
+            text-decoration:none;
+        color: darkred;
+        }
+        a:visited {
+        text-decoration:none;
+        color: black;
+        }
+        a:hover {
+        color: hotpink;
+        }
+        a:active {
+        color: blue;
+        }
+
+
+      ul, li{
+                margin:0; 
+                padding:0;
+                font-style: normal;
+                list-style:none;
+                
+            } 
+            #nav{
+                width:100%; 
+                height:60px; 
+                background-color: darkred;
+                margin:0 auto;
+                overflow:hidden;
+                
+            } 
+            #nav li{
+                display:inline-block;
+            } 
+            #nav li a{
+                display:inline-block;
+                padding:0 20px;
+                color:#FFF;
+                text-decoration:none;
+                font:17px/60px arial;
+            } 
+            #nav li a:hover{
+                background:crimson;
+            } 
+
+            #nav  li ul { 
+                position:absolute; 
+                display:none;
+                
+            }
+            
+            #nav li ul li {
+                
+                 display: block;
+            }
+            
+            #nav li ul li a {
+                
+                background:red;
+            }
+            
+            #nav li:hover ul{
+                display:block; 
+            }
+
+
+        div.header{
+            background-color: red;
+            width: 100%;
+            height: 100px;
+            margin:0 auto;
+        }
+
+    
+        div.header ul li{
+            display:inline-block;
+        }
+
+        div.right{
+            text-align: left;
+        }
+
+        div.serach{
+        float: right;
+        width: 296px;
+        margin-top: 25px;
+        }
+
+        
+        div.left ul li{
+            position:absolute;
+            float: right；
+            display:inline-block;
+            padding: 10px;
+        }
+
+
+
+        /*把文字居中，换文字样式*/
+        span{
+            color: aliceblue;
+        }
+
+
+
+        /*这是新闻的样式，他妈的别搞混了*/
+        div.inf{
+            height:45px;
+            margin-left: 15px;
+            position: relative;
+            top: 10px;
+            color:gray;
+        }
+
+        div.news{
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        div.two{
+            width: 500px;
+            margin:0 0 0 20px;
+            background:white;
+            border-radius: 10px;
+        }
+
+        i{
+            font-style: italic;
+        }
+
+
+         .table{
+            width:10px;
+        }
+
+       
+        
+         img.a:hover
+        {
+        transform: scale(1.7);
+        transition: 0.5s;
+        }
+
+      
+       
+        .footer{
+            background-color: maroon;
+        }
+   
+       div.box3{
+            margin-bottom: 0;
+            width: 50px;
+            height:50px;
+            position:relative;
+            float: right;
+            color: blueviolet;
+        }
+
+        div.center{
+            color: white;
+            text-align: center;
+            position: relative;
+            float: right;
+        }
+
+        .tpwz span{
+            position: relative;
+            float:right;
+        }
+
+        div.wz{
+            position: relative;
+            float: left;
+            color: white;
+        }
+
+        .dhl ul{
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        width:20%;
+        top:40%;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        font-size:50px;
+        color: azure;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body background="dm.jpg">
+    <div class="header">
+        <ul id="head">
+            <li>
+                <div class="right">
+
+                    <img src="1.png" alt="wrong">
+            </li>
+
+           <li>
+           <h2 style="color:maroon" ><span> <strong>信</strong>   </span> 敏  廉  毅</h2>
+           </li>
+
+        <li>
+            <div class="serach">
+                <input type="text" placeholder="请输入你的学号">
+                <input type="submit" value="登录">
+            </div>
+        </li>
+
+        <li>
+            <ul>
+                <li>
+                    <a href="#"<p><img src="2.png" alt="" class="a">
+                        <br/>
+                        学生</p></a>
+                </li>
+                
+
+                <li>
+                    <a href="#"><p><img src="3.png" alt="" class="a">
+                        <br/>
+                        教工</p></a>
+                </li>
+               
+
+                <li>
+
+                    <a href="#"><p><img src="4.png" alt="" class="a">
+                        <br/>
+                        校友</p></a>
+                </li>
+
+                <li>
+                    <a href="#"><p><img src="5.png" alt="" class="a">
+                        <br/>
+                        考生</p></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"><p><img src="6.png" alt="" class="a">
+                        <br/>
+                        访客<p></a>
+
+                </li>
+
+                <li>
+                    <div class="container">
+
+                        <form action="" class="parent">
+                    
+                            <input type="text" class="search" placeholder="请输入关键词">
+                    
+                            <input type="submit" name="检索" value="搜索" id="" class="btn">
+                    
+                        </form>
+                    </div>
+                </li>
+
+            </ul>
+        </li>
+
+
+
+            </div>
+
+    </ul>
+
+
+    </div>
+
+
+    <div class="body" align="center">
+        <ul id="nav"> 
+            <li><a href="#">校园</a></li> 
+            <li><a href="#">大美江财</a>
+                <ul>
+                    <li><a href="#">大美蛟桥  </a></li>
+                    <li><a href="#">悠扬麦庐  </a></li>
+                    <li><a href="#"><strong>孤儿枫林</strong>  </a></li>
+                </ul>
+            </li> 
+            <li><a href="#">江财最美教师</a>
+                <ul>
+                    <li><a href="#">❤清华辜勇❤</a></li>
+                    <li><a href="#">❤博学辜勇❤</a></li>
+                    <li><a href="#">❤低调辜勇❤</a></li>
+                    <li><a href="#">❤友爱辜勇❤</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">酱菜特色</a>
+                <ul>
+                    <li><a href="#">晨点晨读</a></li>
+                    <li><a href="#">早八核酸</a></li>
+                    <li><a href="#">很难赞同</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">留学咨询</a></li> 
+            <li><a href="#">English</a></li> 
+
+            <li><a href="#" float="right">我❤晨点报名入口</a>
+                <ul>
+                    <li><a href="#">**---2211班级----**</a></li>
+                    <li><a href="#">**---2212班级----**</a></li>
+                    <li><a href="#">**---2213班级----**</a></li>
+                </ul>
+            </li> 
+        </ul>
+
+
+
+        <div class="dhl">
+            <ul>
+
+                <li><a class="active" href="#">主页</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">校园</a></li>
+                <li><a href="#">咨询</a></li>
+
+              </ul>
+        </div>
+        
+
+
+
+
+
+
+        <div class="tpwz">
+            <div class="pic">
+                <img src="st.jpg" alt="" width="99.9%">
+
+
+
+                <span> <strong>百年江财 值得信赖</strong> </span>
+            </div>
+            <div class="wz">
+                <strong>星星之火 可以燎原</strong> 
+            </div>
+
+
+
+
+
+        <div id="butong_net_left" style="overflow:hidden;width:640px;padding-left:7%;" class="middle">
+            <table cellpadding="0" cellspacing="0">
+            <tr><td id="butong_net_left1" valign="top">
+            <table cellpadding="0" cellspacing="0">
+            <tr align="center">
+            <td><a href="#" target="_blank"><img src="tsg.jpg" width="500px" height="500px"></a></td>
+            <td><a href="#" target="_blank"><img src="dm.jpg" width="500px" height="500px"></a></td>
+            <td><a href="3" target="_blank"><img src="tsg.jpg" width="500px" height="500px"></a></td>
+            </tr>
+            </table>
+            </td>
+            <td id="butong_net_left2" valign="top"></td>
+            </tr>
+        </table>
+        </div>
+
+<div class="box2" align="left">
+    <div class="two" align="left">
+        <div class="news"><h3>⚠校内要闻</h3></div>
+        <hr size="1" color="gray">
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>1</i>
+            </font>
+            <a href="#">名师 <span style="color: gray;"><strong>辜勇</strong></span> 试卷难度惨绝人寰，是人情的扭曲还是道德的沦丧？
+            </a>
+        </p>
+      </div>
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>2</i>
+            </font>
+            <a href="#">十多年前的学长回母校<span style="color: gray;"><strong>报恩</strong></span>竟然是因为！</a>
+        </p>
+      </div>
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>3</i>
+            </font>
+            <a href="#">对于即将到来的期末考试，酱菜<span style="color: gray;"><strong>学霸</strong></span>说：“都多余了！”</a>
+        </p>
+      </div>
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>4</i>
+            </font>
+            <a href="#">微积分即将<span style="color: gray;"><strong>周测</strong></span>，寄了寄了</a>
+        </p>
+      </div>
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>5</i>
+            </font>
+            <a href="#">江西各高校相继<span style="color: gray;"><strong>放假</strong></span>,而酱菜却选择......</a>
+        </p>
+      </div>
+      <div class="inf"  align="left">
+        <p>
+            <font face="微软雅黑" size="5" color="darkred">
+                <i>6</i>
+            </font>
+            <a href="#">软院129成为<span style="color: gray;"><strong>冠军</strong></span>大热门？！它们是这么训练的......</a>
+        </p>
+      </div>
+     
+    </div>
+
+</div>
+        
+        <script>
+            var speed=30
+            butong_net_left2.innerHTML=butong_net_left1.innerHTML
+            function Marquee3(){
+            if(butong_net_left2.offsetWidth-butong_net_left.scrollLeft<=0)
+            butong_net_left.scrollLeft-=butong_net_left1.offsetWidth
+            else{
+            butong_net_left.scrollLeft++
+            }
+            }
+            var MyMar3=setInterval(Marquee3,speed)
+            butong_net_left.οnmοuseοver=function() {clearInterval(MyMar3)}
+            butong_net_left.οnmοuseοut=function() {MyMar3=setInterval(Marquee3,speed)}
+            </script>
+    </div>
+
+
+
+
+
+    
+
+    
+    <div class="footer">
+        <div class="center">
+            <h1>❤  WELCOME TO JUFE</h1>
+        </div>
+       <img src="1.png" alt="">
+    </div>
+
+</body>
+</html>
