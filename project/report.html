@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告</title>
+    <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+<body>
+    <div class="all">
+        <div class="timu">
+            <h1>web大作业报告</h1>
+        </div>
+
+
+        <div class="jieshao">
+            小组成员：0223627 余浩 /
+                     02236  尹梵
+                     <br>
+                     <span style="color: red;">所有网页均以Edge浏览器为准</span>
+        </div>
+
+        <div class="qianyan">
+           <p>
+            网页名称：酱菜文创
+            <br>
+            类型：网购网站
+            <br>
+            理念：参照作业要求，我们秉承着简约，实用的创作风格，摒弃浓妆艳抹的现象级网页，竭力构思“大方·好看”朴素又不失高级感的产品级网页，耗时近7天
+            <br>
+           </p> 
+        </div>
+
+        <div class="show">
+            <div class="main">
+                <h1>
+                    主体结构
+                </h1>
+                <p>
+                    主体以三段式，分为头部（head），内容（body），页脚（foot）
+                </p>
+
+                <div class="head">
+                    <p><span style="font-size: 25px;">头部：</span>顶部为公司标语，从下看自左向右分别是分享方式，江财校徽+导航栏（二级导航栏），搜索框+购物车（※纯css动态特效）</p>
+                    <img src="./img/main1.png" alt="">
+                </div>
+
+                <div class="body">
+                    <p>
+                        <span style="font-size: 25px;">
+                            内容:
+                        </span>
+                        以商品为主体，用来吸引客户，展现商品，同时将商品分类
+                        <img src="./img/main2.png" alt="">
+                    </p>
+                </div>
+
+                <div class="foot">
+                    <p>
+                        <span style="font-size: 25px;">
+                            页脚：
+                        </span>
+                        作者介绍，和账户的登录，实用display：flex；布局，横纵皆是
+                        <img src="./img/main3.png" alt="">
+                    </p>
+                </div>
+
+                <div class="good">
+                    <h1>亮点锦集</h1>
+                   
+                    <div class="g1">
+                        <br>
+                        主网页的头部，我们设计了很多小心思：
+                        使用onmouseover-onmouseout来实现触及图像的动态变换
+                        <img src="./img/show1.gif" alt="">
+                    </div>
+                   
+                    <div class="g2">
+                        使用css，.uldaohang>ul:hover #twoall::before属性来添加过渡下划线
+                        ，再用transition: all 1s ease-out;来设置动画时间，高级感倍增！！！
+                        <img src="./img/tutieshi_640x374_10s.gif" alt="">
+                    </div>
+
+                    <div class="g3">
+                        搜索框中的小放大镜是通过position定位，将emoji表情嵌入搜索框中，在通过添加a链接使其具有搜索功能
+                        <br>but，购物车才是关键：通过纯css代码，实现侧边栏隐藏，淡出淡入，flex布局在构建可以跳出来的购物车！
+                        <img src="./img/tutieshi_640x374_13s (1).gif" alt="">
+                    </div>
+                    
+                    
+                    <div class="g4">
+                        再来看主网页的滑动效果：顶部网页的标语可以被滑动隐藏，但是：导航栏会逐渐粘滞固定，对没错，这是粘滞定位
+                        <img src="./img/tutieshi_640x374_13s.gif" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="sonpage">
+                    <h1>子页面</h1>
+                    <div class="son1">
+                        跳出主页面，我们来看看精心设计的几个子页面：
+                        <br>
+                        先来看看商品的页面：来到文具区，映入眼帘的就是三个钢笔商品，使用hover鼠标移动变换效果
+                        <br>
+                        (由于图片有限，我们只做了前三个架构，后续会逐渐添加商品，敬请期待......)
+                        <br>
+                        <img src="./img/tutieshi_640x374_14s.gif" alt="">
+                    </div>
+
+                    <div class="son2">
+                        商品页面看心动了没？那就进入购买把！点击前三个商品的其中一个，进入商品详细介绍:
+                        <br>使用css实现的轮播图！！！体现商品的不同角度
+                        <br>
+
+                        <img src="./img/tutieshi_640x374_6s (1).gif" alt="">
+                        <br>
+
+                        商品购买栏就在详情下方，勾选自己想要的容量和数量，动效一样很nice
+                        <br>
+
+                        <img src="./img/tutieshi_640x374_7s (1).gif" alt="">
+                    </div>
+
+                    <div class="son3">
+                        接下来看看登陆页面，登陆页面也有意想不到的小惊喜：
+                        <br>
+                        首先引入眼帘的就是登录用户的界面,利用动态几何video作为背景，聚焦登录提示框
+                        <br>
+                        登录框使用flex分为两个部分，左边是简约的艺术画，右边是用户，使用 border-radius 20px 使其圆润具有几何美学
+                        <img src="./img/tutieshi_640x374_5s.gif" alt="">
+                        <br>
+                        小惊喜：点击输入框，输入框周围由发光聚焦效果：
+                        <br>
+                        <img src="./img/tutieshi_640x374_6s.gif" alt="">
+
+
+                    </div>
+
+
+                    <div class="son4">
+                        介绍我公司的商标：
+                        <br>
+                        Si元素的周期律：si是科技领域不可少的元素，也寓意我们会在科技领域创造一片自己的天地
+                        <br>
+                        是尹梵纯css打造的，凝聚多日的心血
+                        <br>
+                        <img src="./img/tutieshi_640x374_7s.gif" alt="">
+                    </div>
+
+                    <div class="son5">
+                        每个商城必不可少的部分，会员需要吸引人却不是高雅，以灰黑色为主题
+                        <br>
+                        固定定位的二维码时刻提醒着充值，让人有立刻加入的冲动
+                        <br>
+                        不过重点就是下方四个特性的flex布局，里外两个包含块同时布局的难度还是很大的
+                        <br>
+                        再就是通过js的手段制作的自动播放轮播图！是本作业为数不多使用js的地方，费时费力！
+                        <br>
+                        <img src="./img/tutieshi_640x374_16s.gif" alt="">
+                    </div>
+
+                    <div class="son6">
+                        最后一个惊喜便是这个作业报告，始终悬浮在网页的右下角，随看随点，醒目方便
+                        <br>
+                        <img src="./img/bggggg.png" alt="">
+                    </div>
+
+
+
+                    <div class="detail">
+                        <h1>
+                            制作之路：
+                        </h1>
+                        <p>
+                           仔细观察不难发现，大作业中的确还存在着部分细节没有处理到位（图片的位置调整不好），这是我们今后会花更多的时间去调整和完善的
+                           <br>
+                           制作之路确实很艰辛，但相比老师的付出真的微不足道，没有老师的鼎力相助，我想我们不会走到今天
+                           <br>
+                           最后，辛苦老师的工作，预祝老师与同学们新年快乐，来年我们再创辉煌！
+                           <br>
+                           ps: 这个gif图转化与导入能不能算是亮点呢？希望也能算是一个加分点吧
+                        </p>
+                    </div>
+
+                    
+
+
+                    <div class="jiafenxiang" >
+                        <h1>加分项</h1>
+                        1.	主网页以及子网页运用了大量的flex效果
+                        <br>
+                        2. 导航栏与商品浏览页面均运用了的onmouseover-onmouseout转换
+                        <br>
+                        3.web的运用了很多款字体，给网页带来了美观和协调性，不会生硬
+                        <br>
+                        4.子网页使用了两种形式的轮播图，商品详情css实现与会员页面js实现
+                         <br>
+                        5.注册页面半透明的形式，让背景动画播放的协调，并且注册页面的背景视频是自动播放的
+                        <br>
+                        6.熟练的使用了多个position定位：粘滞sticky定位，固定fixed定位，绝对相对定位来实现布局
+                        <br>
+                        7.购物车的隐藏侧边栏，以及点击submit的填充动态效果真的很棒！
+                        <br>
+                        8.商品详情界面，点击按钮的动图也是精心制作的
+                    </div>
+
+
+                    <div class="summerize">
+                        <h1>
+                            结果评价与分析:
+                        </h1>
+                        小组仅两人，身在异处，沟通不便，让我有一种两人合作比一人单开都更难实现的错觉。
+                        <br>
+                        实际上我和尹梵配合的还是相当好的，感谢尹梵大兄弟实现了网页的很多动效，千把行的代码是我们没日没夜敲出来的
+                        <br>
+                        最终的结果也是很让我们满意，达到了我们的预期效果，希望未来能在一次和同样的队友合作
+                        <br>
+                        <span>
+                            最后，特别鸣谢场外选手13班冯诗雨的帮助，每天驱策我监督我完成这次的web大作业，老师一定要给她多加分！！！！
+                        </span>
+
+
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP-不做大多数</title>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="vip.css">
+</head>
+
+<style>
+    *{
+        margin: 0;
+    }
+
+
+     .site-content {
+            height: 500px;
+            position:relative;
+            top:10px;
+            left:10%;
+            
+        }
+        
+    
+        
+        .box {
+            width: 1000px;
+            height: 500px;
+            border: 3px #d6d2d2 double;
+            position: relative;
+            left: 0px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        #imglist img {
+            width: 1000px;
+            height: 500px;
+            border-radius: 5px;
+        }
+        
+        #imglist {
+            width: 5000px;
+            height: 500px;
+            list-style: none;
+            position: absolute;
+            left: 50px;
+        }
+        
+        #imglist li {
+            float: left;
+        }
+        
+        #btnlist {
+            width: 50px;
+            left: 450px;
+            top: 490px;
+            position: absolute;
+            list-style: none;
+        }
+        
+        #btnlist li {
+            color: coral;
+            text-align: center;
+            float: left;
+            width: 5px;
+            padding: 2px;
+            border-radius: 100%;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        
+
+        
+</style>
+
+
+<body background="./img/背景1.jpg">
+
+
+    <div class="qrcode">
+        <img src="./img/wcpay.jpg" alt="" width="auto" height="200px">
+    </div>
+
+    <div class="qrcode2">
+        <img src="./img/airpay.jpg" alt="" width="auto" height="200px">
+    </div>
+
+
+
+
+
+
+    <!-- <div class="head-paper">
+
+        <div class="divpaperleft">
+
+            <ul class="ulpaperleft">
+                <li class="lipaperleft"><a href="">
+                    <a href="">
+                    <img src="./img/qq.jpg" alt="" width="20px" height="20px" onmouseover="this.src='./img/qq2.jpg'"  onmouseout="this.src='./img/qq.jpg'">
+                    </a>
+
+
+                </li>
+                <li class="lipaperleft"><a href="">
+                    <a href="">
+                    <img src="./img/wx.jpg" alt="" width="20px" height="20px" onmouseover="this.src='./img/wx2.jpg'"  onmouseout="this.src='./img/wx.jpg'">
+                    </a>
+                </li>
+
+
+                <li class="lipaperleft"><a href="">
+                    <a href="">
+                    <img src="./img/wb.jpg" alt="" width="20px" height="20px" onmouseover="this.src='./img/wb2.jpg'"  onmouseout="this.src='./img/wb.jpg'">
+                    </a>
+                </li>
+
+
+                <li class="lipaperleft"><a href="">
+                    <a href="">
+                    <img src="./img/dy.jpg" alt="" width="20px" height="20px" onmouseover="this.src='./img/dy2.jpg'"  onmouseout="this.src='./img/dy.jpg'" >
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="papermid">
+            <div class="papermid-log">
+                <a href="#">
+                    <img src="./img/jufe.jpg" alt="" width="100px" onmouseover="this.src='./img/jufe2.jpg'"  onmouseout="this.src='./img/jufe.jpg'">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="paperright">
+            <div class="paperright-serach">
+                <input type="text" placeholder="搜索" style="position: absolute;right: 60px;width: 90px;;">
+                <a href="#" style="position: absolute;right: 60px;text-decoration:none">🔍</a>
+            </div>
+
+
+            <div class="paperright-goods" >
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <a style="text-decoration:none;position: absolute;right: 12px;">🛒</a>
+                    <a id="cancel"><img src="img/cancel.jpg" width="25px" height="25px"></a>
+                </label>
+                <div id="sidebar">
+                    <div id="sidebar_top">
+                        <span>购物车</span>
+                        </div>
+                    <div id="sidebar_middle">
+                  <a><img src="img/niubi.jpg" width="120px" height="120px"></a>  
+                  <i>牛逼哄哄的商品...<br><i style="color: rgb(97, 99, 100);">¥100000</i></i>
+                  <a><img src="img/niubi.jpg" width="120px" height="120px"></a>  
+                  <i>牛逼哄哄的商品...<br><i style="color: rgb(97, 99, 100);">¥100000</i></i>
+                  <a><img src="img/niubi.jpg" width="120px" height="120px"></a>  
+                  <i>牛逼哄哄的商品...<br><i style="color: rgb(97, 99, 100);">¥100000</i></i>                     
+                    </div>
+                    <div id="sidebar_bottom">
+                        <button><span>submit·¥300000</span></button>
+                    </div>
+                </div>
+                <div id="mask"></div>
+            </div>
+        </div>
+
+    </div> -->
+
+    <!-- <div class="guanggao1">
+        <img src="./img/万寿宫.jpg" alt="">
+    </div> -->
+
+
+
+
+
+    <!-- <div class="daohang">
+        <div class="daohang-mid">
+             <ul class="uldaohang" >
+                <ul class="lidaohang"   style="margin: 0;">
+                    <a href="productspage.html" style="margin-right: 70px; border: none;">商店</a>
+                    <div id="twoall"><li class="twoli"><a href="productspage.html">文具</a></li>
+                        <li class="twoli"><a href="productspage.html">食品</a></li>
+                        <li class="twoli"><a href="productspage.html">纪念品</a></li></div>
+                </ul>       
+                     -->
+
+                    <div class="lidaohang">
+                        <p class="lip"><a href="#"><span style="font-size: large;color: red;font-family: STHupo;">👑会员</span></a></p>
+                    </div>
+             <!-- </ul>
+        </div>
+    </div> -->
+
+
+    <div class="site-content">
+        <div class="container">
+            <div class="box">
+                <ul id="imglist" style="left: -2000px;">
+                    <li><img src="./img/背景1.jpg"  alt="" width="200px"></li>
+                    <li><img src="./img/背景2.jpg" alt="" width="200px"></li>
+                    <li><img src="./img/背景3.jpg" alt="" width="200px"></li>
+                    <li><img src="./img/背景4.jpg" alt="" width="200px"></li>
+                    <li><img src="./img/背景5.jpg" alt="" width="200px"></li>
+                </ul>
+
+
+                <ul id="btnlist">
+                    <li class="btn active" style="background-color: rgba(0, 0, 0, 0.2);"></li>
+                    <li class="btn" style="background-color: rgba(0, 0, 0, 0.2);"></li>
+                    <li class="btn" style="background-color: coral;"></li>
+                    <li class="btn" style="background-color: rgba(0, 0, 0, 0.2);"></li>
+                    <li class="btn" style="background-color: rgba(0, 0, 0, 0.2);"></li>
+                </ul>
+
+            </div>
+
+
+            <script>
+                var index = 0;
+                var imglist = document.getElementById('imglist');
+                var btnlist = document.getElementById('btnlist');
+                var arrbtn = btnlist.getElementsByTagName('li');
+
+                function btnchange(index) {
+                    for (var i = 0; i < 5; i++) {
+                        if (i == index) {
+                            arrbtn[i].style.backgroundColor = 'coral';
+                        } else {
+                            arrbtn[i].style.backgroundColor = 'rgba(0,0,0,0.2)';
+                        }
+                    }
+                }
+
+                for (var i = 0; i < 5; i++) {
+                    arrbtn[i].num = i;
+                    arrbtn[i].onmouseover = function() {
+                        index = this.num;
+                        imglist.style.left = index * (-1000) + 'px';
+                        clearInterval(t);
+                        btnchange(index);
+                        this.onmouseout = function() {
+                            t = setInterval(imgchange, 2000);
+                        }
+                    }
+
+                }
+
+                function imgchange() {
+                    if (index == 4)
+                        index = -1;
+                    index++;
+                    imglist.style.left = index * (-1000) + 'px';
+                    btnchange(index);
+                }
+                var t = setInterval(imgchange, 2000);
+            </script>
+        </div>
+    </div>
+
+    
+    
+    <script>
+        var index = 0;
+        var imglist = document.getElementById('imglist');
+        var btnlist = document.getElementById('btnlist');
+        var arrbtn = btnlist.getElementsByTagName('li');
+
+        function btnchange(index) {
+            for (var i = 0; i < 5; i++) {
+                if (i == index) {
+                    arrbtn[i].style.backgroundColor = 'coral';
+                } else {
+                    arrbtn[i].style.backgroundColor = 'rgba(0,0,0,0.2)';
+                }
+            }
+        }
+
+        for (var i = 0; i < 5; i++) {
+            arrbtn[i].num = i;
+            arrbtn[i].onmouseover = function() {
+                index = this.num;
+                imglist.style.left = index * (-1000) + 'px';
+                clearInterval(t);
+                btnchange(index);
+                this.onmouseout = function() {
+                    t = setInterval(imgchange, 2000);
+                }
+            }
+
+        }
+
+        function imgchange() {
+            if (index == 4)
+                index = -1;
+            index++;
+            imglist.style.left = index * (-1000) + 'px';
+            btnchange(index);
+        }
+        var t = setInterval(imgchange, 2000);
+    </script>
+
+
+        <div class="viphead">
+            <h4><span style="color:red">👑VIP</span>-不做大多数</h1>
+        </div>
+
+        
+
+
+
+
+
+        <div class="vipbody">
+            <div class="power1">
+                <div class="p1">
+                    <p>服务特权</p>
+                    
+                </div>
+
+                <div class="p2">
+                    vip会员 夜间客服
+                </div>
+
+                <div class="vipphoto">
+                    <img src="./img/客服.png" alt="" width="70px" height="90px">
+                </div>
+                
+            </div>
+
+            <div class="power1">
+                <div class="p1">
+                    <p>购物特权</p>
+                    
+                </div>
+
+                <div class="p2">
+                    vip会员 尽享优惠
+                </div>
+
+                <div class="vipphoto">
+                    <img src="./img/购物车2.png" alt="" width="70px" height="90px">
+                </div>
+
+            </div>
+
+            <div class="power1">
+                <div class="p1">
+                    <p>净化特权</p>
+                    
+                </div>
+
+                <div class="p2">
+                    超级会员 广告清零 
+                </div>
+
+                <div class="vipphoto">
+                    <img src="./img/护盾2.png" alt="" width="70px" height="90px">
+                </div>
+
+            </div>
+
+            <div class="power1">
+                <div class="p1">
+                    <p>运输特权</p>
+                    
+                </div>
+
+                <div class="p2">
+                    超级会员 抢先发货
+                </div>
+
+                <div class="vipphoto">
+                    <img src="./img/卡车2.png" alt="" width="70px" height="90px">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="vipfoot">
+
+        </div>
+
+
+    
+</body>
+</html>

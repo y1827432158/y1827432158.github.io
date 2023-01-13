@@ -1,0 +1,28 @@
+#Theme{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    border-bottom:1px solid #333333;
+}
+#niubi_goods{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    padding-left: 60px;
+    justify-content: space-evenly;
+}
+.niubi_image{
+    width: 300px;
+    height: 410px;
+    padding: 0 0 0 20px;
+    margin:0 0 50px;
+}
+.niubi_image p{
+    font-size: 13px;
+    text-align: center;
+}
+
+

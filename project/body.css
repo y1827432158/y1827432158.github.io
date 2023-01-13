@@ -1,0 +1,31 @@
+.uldisplay li{
+    display:inline-block;
+    margin-left: 25px;
+}
+
+.uldisplay{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.sentence{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.uldisplay a{
+    text-decoration: none;
+    color: black;
+}
+
+.photo{
+    position: relative;
+    left: 0;
+}
+
+
+

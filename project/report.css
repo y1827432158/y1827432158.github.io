@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.head,.body,.foot{
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.jiafenxiang{
+    color: red;
+}
+
+.summerize span{
+    font-weight: 200;
+}
+
+.good .g1,.g2,.g3,.g4,.g5,.g6,.sonpage{
+    text-align: center;
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+}
+
+.timu{
+    font-family: STCaiyun;
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+}
+
+.jieshao{
+    font-weight: 200;
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+}
+
+.show{
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+}
+
+.qianyan{
+    border: solid;
+    border-color: black;
+    background-color:gray;
+    margin-top: 2px;
+}
